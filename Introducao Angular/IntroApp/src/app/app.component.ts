@@ -9,12 +9,13 @@ export class AppComponent {
   title = 'IntroApp';
   count = 0;
   label = "";
+  name = "";
+
+  onInputChange = (value: string) => {
+    this.name = value
+  }
 
   foiClicado = () => {
     this.count++;
-  }
-
-  foiMudado = () => {
-    this.label = textIn
   }
 }

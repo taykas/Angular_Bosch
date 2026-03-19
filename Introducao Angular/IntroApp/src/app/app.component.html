@@ -1,4 +1,3 @@
-<app-button (OnClick)="foiClicado()" [label]="count.toString()"/>
+{{name}}
 <br>
-<app-input (textInput)="foiMudado()" />
-<p>{{label}}</p>
+<app-input [value]="name" (changed)="onInputChange($event)">

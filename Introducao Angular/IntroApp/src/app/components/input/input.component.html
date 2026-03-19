@@ -1,1 +1,7 @@
-<input (ngModel)="valor" type="text" onChange={change}  >
+<div class="input-container">
+    <input
+        type="text"
+        [value]="value"
+        (input)="onInputChange($event)"
+    >
+</div>

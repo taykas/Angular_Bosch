@@ -7,16 +7,17 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class InputComponent {
 
-  @Output()
-  textInput: EventEmitter<string> = new EventEmitter<string>
-
   @Input()
-  label: string = ""
+  value: string = ""
+  @Output()
+  changed: EventEmitter<string> = new EventEmitter()
+
 
   valor: string = '';
   
 
-  change = () => {
-    this.textInput.emit("valor")
+  onInputChange = (value: any) => {
+    const StringValue = value.srcElement?.value;
+    this.changed.emit(StringValue)
   }
 }
