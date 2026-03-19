@@ -4,13 +4,13 @@ import { MainPageComponent } from './features/main-page/main-page.component';
 import { LoginPageComponent } from './features/login-page/login-page.component';
 import { NotFoundPageComponent } from './features/not-found-page/not-found-page.component';
 import { compileClassMetadata } from '@angular/compiler';
-import { MercadoPageComponentComponent } from './features/main-page/mercado-page-component/mercado-page-component.component';
-import { ComidaPageComponentComponent } from './features/main-page/comida-page-component/comida-page-component.component';
+import { MercadoPageComponent } from './features/main-page/mercado-page/mercado-page.component';
+import { ComidaPageComponent } from './features/main-page/comida-page/comida-page.component';
 
 const routes: Routes = [
-  {path: "", component: MainPageComponent, children[
-    {path: "mercado", component: MercadoPageComponent}
-    {path: "comida", component: ComidaPageComponentComponent}
+  {path: "", component: MainPageComponent, children:[
+    {path: "mercado", component: MercadoPageComponent},
+    {path: "comida", component: ComidaPageComponent}
   ]},
   {path: "login", component: LoginPageComponent},
   {path: "**", component: NotFoundPageComponent}

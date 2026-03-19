@@ -1,16 +1,26 @@
 header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     width: 100%;
     height: 5rem;
-    height: 5rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.375);
-    padding: 0 2rem;
+    padding: 2rem;
+
+    background-color: rgb(115, 62, 168);
+    color: white;
 
     .links {    
         display: flex;
         gap: 2rem;
     }
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
 }

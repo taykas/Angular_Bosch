@@ -1,0 +1,7 @@
+.cards_comida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 5rem;
+}

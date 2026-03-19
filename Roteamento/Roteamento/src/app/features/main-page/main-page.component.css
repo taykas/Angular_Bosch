@@ -1,3 +1,6 @@
-.main-contaikner {
+.main-container {
     display: flex;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    overflow: auto;
 }

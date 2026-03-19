@@ -8,8 +8,10 @@ import { MainPageComponent } from './features/main-page/main-page.component';
 import { NotFoundPageComponent } from './features/not-found-page/not-found-page.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { NavComponent } from './shared/nav/nav.component';
-import { MercadoPageComponentComponent } from './features/main-page/mercado-page-component/mercado-page-component.component';
-import { ComidaPageComponentComponent } from './features/main-page/comida-page-component/comida-page-component.component';
+import { MercadoPageComponent } from './features/main-page/mercado-page/mercado-page.component';
+import { ComidaPageComponent } from './features/main-page/comida-page/comida-page.component';
+import { CardComponent } from './shared/card/card.component';
+import { CardMercadoComponent } from './shared/card-mercado/card-mercado.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +21,10 @@ import { ComidaPageComponentComponent } from './features/main-page/comida-page-c
     NotFoundPageComponent,
     HeaderComponent,
     NavComponent,
-    MercadoPageComponentComponent,
-    ComidaPageComponentComponent
+    MercadoPageComponent,
+    ComidaPageComponent,
+    CardComponent,
+    CardMercadoComponent
   ],
   imports: [
     BrowserModule,

@@ -12,7 +12,6 @@ export class InputComponent {
   @Output()
   changed: EventEmitter<string> = new EventEmitter()
 
-
   valor: string = '';
   
 

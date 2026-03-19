@@ -1,16 +1,29 @@
 nav {
-    width: 8rem;
+    position: fixed;
+    top: 5rem;
+    width: 11rem;
     height: calc(100vh - 5rem);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.375);
     padding: 1rem;
     
-    section:first-child(){
+    
+    section:first-child{
         display: flex;
         flex-direction: column;
-        align-items: start;
         gap: .5rem;
     }
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(115, 62, 168);
+}
+
+.config {
+    text-align: center;
 }
