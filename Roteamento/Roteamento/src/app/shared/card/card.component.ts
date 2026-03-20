@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IComida } from 'src/app/features/main-page/comida-page/Comida.mock';
 
 @Component({
@@ -7,7 +7,17 @@ import { IComida } from 'src/app/features/main-page/comida-page/Comida.mock';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
+  IsClicked: boolean = false;
+
+  @Output()
+  OnClick: EventEmitter<void> = new EventEmitter();
 
   @Input()
-  comida!: IComida;
+    comida!: IComida;
+
+  clicked = () => {
+    this.OnClick.emit();
+    this.IsClicked = true
+    console.log(this.IsClicked)
+  }
 }

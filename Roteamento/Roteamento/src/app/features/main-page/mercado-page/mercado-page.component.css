@@ -3,5 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    top: 5rem;
+    top: 10rem;
+
+    margin-top: 5rem;
+    margin-left: 10rem;
 }

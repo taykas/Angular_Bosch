@@ -1,9 +1,15 @@
-<div class="card">
-    <img class="img" src="{{mercado.imagem}}" alt="">
-    <div class="titulo_card">
-        <p>{{comida.categoria}}</p>
-        <p>{{comida.name}}</p>
-    </div>
-    <p>Descrição: {{comida.descricao}}</p>
-    <p>Preço: {{comida.preco}}</p>
+<div class="card_mercado">
+    <section class="card_img">
+        <img class="img" src="{{mercado.imagem}}" alt="">
+    </section>
+    <section class="content">
+        <div class="titulo_card_mercado">
+            <p>{{mercado.name}}</p>
+            <p>{{mercado.categoria}}</p>
+        </div>
+        <p class="descricao">Descrição: {{mercado.descricao}}</p>
+        <p class="descricao">VA: {{ mercado.aceitaValeAlimentacao ? 'Sim' : 'Não' }}</p>
+        <p class="descricao">Praça de Alimentação: {{ mercado.aceitaValeAlimentacao ? 'Sim' : 'Não' }}</p>
+        <p>Horário Funcionamento: {{mercado.horarioFuncionamento}}</p>
+    </section>
 </div>

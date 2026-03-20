@@ -1,5 +1,6 @@
 <div class="cards_comida">
     <div class="card" *ngFor="let comida of comida; track: $index">
-        <app-card [comida]="comida"></app-card>
+        <app-card [comida]="comida" (click)="clicked(comida)"></app-card>
     </div>
 </div>
+<app-modal-comida *ngIf="IsClicked" [comida]="comidaSelecionada" (OnClose)="closeModal($event)"></app-modal-comida>

@@ -1,0 +1,18 @@
+<div class="modalContent">
+    <div class="content">
+        <img src="https://cdn-icons-png.flaticon.com/512/9403/9403247.png" alt="" class="icon-fechar" (click)="closeModal()">
+        <h1>{{comida?.name}}</h1>
+        <section class="img-content">
+            <img src="{{comida?.imagem}}" class="img-modal" alt="">
+        </section>
+
+        <section class="titulo-content">
+            
+        </section>
+
+        <section class="food-content">
+            <h1>Descrição: {{comida?.descricao}}</h1>
+            <h1>R${{comida?.preco}}</h1>
+        </section>
+    </div>
+</div>

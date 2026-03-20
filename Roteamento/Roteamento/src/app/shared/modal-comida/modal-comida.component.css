@@ -1,0 +1,60 @@
+.modalContent{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(1px);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 30rem;
+    height: 32rem;
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+
+    background-color: rgb(150, 109, 190);
+    color: white;
+}
+
+.icon-fechar {
+    width: 2rem;
+    height: 2rem;
+    align-self: flex-end;
+    margin:  0rem 2rem 2rem 0rem;
+}
+
+.img-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-modal {
+    width: 25rem;
+    height: 15rem;
+    margin: 0 2rem 0;
+}
+
+.titulo-content {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 7rem;
+    margin: 1rem;
+}
+
+.food-content {
+    margin: 0 2rem 2rem 2rem;
+}

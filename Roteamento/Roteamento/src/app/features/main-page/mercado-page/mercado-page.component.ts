@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import MockMercado, { IMercado } from './Mercado.mock';
-import MockComida from '../comida-page/Comida.mock';
 
 @Component({
   selector: 'app-mercado-page',
@@ -14,3 +13,4 @@ export class MercadoPageComponent {
     this.mercado = MockMercado
   }
 }
+
