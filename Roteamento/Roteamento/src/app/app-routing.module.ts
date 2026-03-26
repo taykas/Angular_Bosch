@@ -8,11 +8,11 @@ import { MercadoPageComponent } from './features/main-page/mercado-page/mercado-
 import { ComidaPageComponent } from './features/main-page/comida-page/comida-page.component';
 
 const routes: Routes = [
-  {path: "", component: MainPageComponent, children:[
+  {path: "home", component: MainPageComponent, children:[
     {path: "mercado", component: MercadoPageComponent},
     {path: "comida", component: ComidaPageComponent}
   ]},
-  {path: "login", component: LoginPageComponent},
+  {path: "", component: LoginPageComponent},
   {path: "**", component: NotFoundPageComponent}
 ];
 

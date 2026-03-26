@@ -1,1 +1,28 @@
-<p>novo-modal works!</p>
+<div class="modal-container">
+    <div class="modal-header">
+        <div class="title">{{Title}}</div>
+    </div>
+
+    <div class="modal-content">
+        <ng-content></ng-content>
+    </div>
+
+    <div class="modal-footer">
+        <div class="confirmation">
+            <section class="btns-confirmation">
+                <button class="btn-cancel" >Cancel</button>
+                <button class="btn-save">{{SaveLabel || "Save"}}</button>
+            </section>
+            
+            <section class="links">
+                <section *ngIf="isLogin" class="link-cadlogin">
+                    <a (click)="toggle()">Não possui cadastro?</a>
+                </section>
+    
+                <section *ngIf="!isLogin">
+                    <a (click)="toggle()">Já possui login?</a>
+                </section>
+            </section>
+        </div>
+    </div>
+</div>

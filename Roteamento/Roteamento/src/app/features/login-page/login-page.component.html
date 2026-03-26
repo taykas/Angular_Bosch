@@ -1,1 +1,19 @@
-<p>login-page works!</p>
+<app-novo-modal 
+  *ngIf="showModal"
+  [Title]="isLogin ? 'Login' : 'Cadastro'"
+  [isLogin]="isLogin"
+  (toggleType)="isLogin = !isLogin">
+
+    <div *ngIf="isLogin" class="content-modal">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Senha">
+    </div>
+
+    <div *ngIf="!isLogin" class="content-modal">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Senha">
+        <input type="text" placeholder="Email">
+        <input type="password" placeholder="Senha">
+    </div>
+
+</app-novo-modal>
